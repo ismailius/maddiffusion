@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="http://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<video id=example-video width=960 height=540 class="video-js vjs-default-skin" controls>
-  <source
-     src="https://vc.lifesizecloud.com/api/v1/cloud-api/embed/cea2902d-8de0-4df5-b66c-11959014d5bc?accesstoken=cba51003-24bc-463b-8655-d4dfe41c7657"
-     type="application/x-mpegURL">
-</video>
+    <h1>Hello World</h1>
+    <p>I'm hosted with GitHub Pages.</p>
+    <video id=example-video width=960 height=540 class="video-js vjs-default-skin" controls>
+        <source src="https://vc.lifesizecloud.com/api/v1/cloud-api/embed/cea2902d-8de0-4df5-b66c-11959014d5bc?accesstoken=cba51003-24bc-463b-8655-d4dfe41c7657" type="application/x-mpegURL">
+    </video>
 </body>
+
 </html>
-
-
-<script src="video.js"></script>
-<script src="videojs.hls.min.js"></script>
-<script>
-var player = videojs('example-video');
-player.play();
-</script>
