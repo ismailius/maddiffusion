@@ -2,32 +2,45 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style type="text/css">
+    .resp-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
 
-	<link href="//vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
-	<script src="//vjs.zencdn.net/5.4.6/video.min.js"></script>
+    .resp-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="//vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/5.4.6/video.min.js"></script>
 </head>
 
 <body>
-
-	<div class="container">
-		<div class="row justify-content-md-center text-center">
-			<div class="col col-lg-2"></div>
-			<div class="col-md-auto">
-				<h4 class="mt-5">
+    <div class="container">
+        <div class="row justify-content-md-center text-center">
+            
+            <div class="col-md-auto">
+                <h4 class="mt-5">
 					Maddiffusion
 				</h4>
-
-				<iframe class="mt-3 w-100" src="https://vc.lifesizecloud.com/api/v1/cloud-api/embed/cea2902d-8de0-4df5-b66c-11959014d5bc?accesstoken=cba51003-24bc-463b-8655-d4dfe41c7657" allowfullscreen=""></iframe>
-
-			</div>
-			<div class="col col-lg-2"></div>
-		</div>
-	</div>
-	
+                <div class="embed-responsive embed-responsive-16by9">
+                	<iframe class="mt-3 embed-responsive-item" src="https://vc.lifesizecloud.com/api/v1/cloud-api/embed/cea2902d-8de0-4df5-b66c-11959014d5bc?accesstoken=cba51003-24bc-463b-8655-d4dfe41c7657" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </body>
 
 </html>
