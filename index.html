@@ -11,7 +11,6 @@
     <meta property="og:image" content="https://ismailius.github.io/maddiffusion/img/backimg.png">
     <meta property="og:image:width" content="1986">
     <meta property="og:image:height" content="1117">
-    
     <style type="text/css">
     .resp-container {
         position: relative;
@@ -37,6 +36,10 @@
         height: 100%;
         border: 0;
     }
+
+    .embed-responsive-16by10::before {
+        padding-top: 86.25%;
+    }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -46,6 +49,7 @@
     <script src="https://live.lifesizecloud.com/media/videojs/video.min.js"></script>
     <script src="https://live.lifesizecloud.com/media/videojs/videojs-contrib-hlsjs.js"></script>
     <script src="https://live.lifesizecloud.com/media/videojs/hls.min.js"></script>
+    <script type="text/javascript" src="//app.surveyanyplace.com/s/js/rev2/prod/embed.js" defer async></script>
 </head>
 
 <body>
@@ -61,6 +65,13 @@
     <div class="m-0 p-0 text-center text-white overflow-hidden" style="background-color: black;">
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item shadow" src="https://vc.lifesizecloud.com/api/v1/cloud-api/embed/78f8cc08-bb10-4860-9a94-79672d204f1b?accesstoken=641d01dd-fdd9-454b-b166-2e303838b4c3" allowfullscreen=""></iframe>
+        </div>
+    </div>
+    <div class="position-relative overflow-hidden p-0 p-md-5 text-center bg-light">
+        <div class="w-100">
+            <div class="embed-responsive embed-responsive-16by10">
+                <iframe class="embed-responsive-item shadow" src="https://surveyanyplace.com/s/Biopharm"></iframe>
+            </div>
         </div>
     </div>
 </body>
